@@ -103,10 +103,13 @@ public class MainFrom extends JFrame implements ActionListener {
 		// 取具体按钮事件
 		Object b = e.getSource();
 		if (b.equals(send)) {
+			
 			byte[] data = getPakect(postData.getText());
 			Nets net = new Nets();
 			String ret = net.goPost(hostName.getText().toString(), Integer.parseInt(tNum.getText().toString()), data);
 			feedBack.setText(ret);
+			
+			
 		}
 	}
 
