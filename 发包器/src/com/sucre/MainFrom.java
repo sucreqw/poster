@@ -106,7 +106,13 @@ public class MainFrom extends JFrame implements ActionListener {
 			
 			byte[] data = getPakect(postData.getText());
 			Nets net = new Nets();
-			String ret = net.goPost(hostName.getText().toString(), Integer.parseInt(tNum.getText().toString()), data);
+			int port=Integer.parseInt(tNum.getText().toString());
+			String ret="";
+			if(port==80){
+				ret = net.GoHttp (hostName.getText().toString(), port, data);
+			}else {
+				ret = net.goPost(hostName.getText().toString(), port, data);
+			}
 			feedBack.setText(ret);
 			
 			
