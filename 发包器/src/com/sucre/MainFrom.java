@@ -108,10 +108,11 @@ public class MainFrom extends JFrame implements ActionListener {
 			Nets net = new Nets();
 			int port=Integer.parseInt(tNum.getText().toString());
 			String ret="";
-			if(port==80){
-				ret = net.GoHttp (hostName.getText().toString(), port, data);
-			}else {
+			if(port==443){
 				ret = net.goPost(hostName.getText().toString(), port, data);
+			}else {
+
+				ret = net.GoHttp (hostName.getText().toString(), port, data);
 			}
 			feedBack.setText(ret);
 			
