@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5875e1cd-372f-42df-913d-5d87d87efbf4" name="Default Changelist" comment="" />
+    <list default="true" id="5875e1cd-372f-42df-913d-5d87d87efbf4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/发包器/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/发包器/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/发包器/src/com/sucre/MainFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/发包器/src/com/sucre/MainFrom.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/发包器/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/发包器/src/com/sucre/MainFrom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="113" selection-start-line="113" selection-end-line="113" />
+            <state relative-caret-position="349">
+              <caret line="135" column="41" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -50,10 +54,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1890" />
-    <option name="height" value="977" />
+    <option name="width" value="1920" />
+    <option name="height" value="996" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -136,17 +140,17 @@
       <workItem from="1551270393260" duration="84000" />
       <workItem from="1551405389189" duration="594000" />
       <workItem from="1551747528551" duration="236000" />
+      <workItem from="1552295341563" duration="640000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="914000" />
+    <option name="totallyTimeSpent" value="1554000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="977" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1920" height="996" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2550586" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25772098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -155,7 +159,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32964602" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -165,7 +169,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -197,8 +201,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/发包器/src/com/sucre/MainFrom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="349">
+          <caret line="135" column="41" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
         </state>
       </provider>
     </entry>

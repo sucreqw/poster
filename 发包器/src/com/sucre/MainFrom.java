@@ -125,7 +125,7 @@ public class MainFrom extends JFrame implements ActionListener {
 		data = data.replaceAll("gettime", MyUtil.getTime());
 		// 生成随机数字
 		int begin, ends;
-		while ((begin = data.indexOf("RR")) != -1) {
+		while ((begin = data.indexOf("RR(")) != -1) {
 			ends = data.indexOf(")", begin);
 			String t = data.substring(begin + 3, ends);
 			data = data.replaceAll("RR\\(" + t + "\\)", MyUtil.makeNumber(Integer.parseInt(t)));
@@ -133,7 +133,7 @@ public class MainFrom extends JFrame implements ActionListener {
 		}
 		// 生成随机字符
 		// int begin,ends;
-		while ((begin = data.indexOf("NN")) != -1) {
+		while ((begin = data.indexOf("NN(")) != -1) {
 			ends = data.indexOf(")", begin);
 			String t = data.substring(begin + 3, ends);
 			data = data.replaceAll("NN\\(" + t + "\\)", MyUtil.makeNonce(Integer.parseInt(t)));
