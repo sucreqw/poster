@@ -33,6 +33,7 @@ public class MainFrom extends JFrame implements ActionListener {
 	JTextField tNum = new JTextField();
 	JTextArea postData = new JTextArea();
 	JTextArea feedBack = new JTextArea();
+	JTextArea autoSend = new JTextArea();//定时发送毫秒数
 
 	MainFrom(String title) {
 		// 定义x,y,w,h,位置及大小
@@ -53,6 +54,7 @@ public class MainFrom extends JFrame implements ActionListener {
 		// feedBack.setBounds(10, 10, 100, 100);
 		hostName.setBounds(727, 24, 123, 20);
 		tNum.setBounds(727, 52, 43, 20);
+		autoSend.setBounds(727, 112, 43, 20);
 
 		// 为textbox设置内容和属性
 		hostName.setText("host");
@@ -67,6 +69,7 @@ public class MainFrom extends JFrame implements ActionListener {
 		// jf.add(feedBack);
 		jf.getContentPane().add(hostName);
 		jf.getContentPane().add(tNum);
+		jf.getContentPane().add(autoSend);
 
 		JScrollPane scroll = new JScrollPane();
 		scroll.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
@@ -103,19 +106,30 @@ public class MainFrom extends JFrame implements ActionListener {
 		// 取具体按钮事件
 		Object b = e.getSource();
 		if (b.equals(send)) {
-			
-			byte[] data = getPakect(postData.getText());
-			Nets net = new Nets();
-			int port=Integer.parseInt(tNum.getText().toString());
-			String ret="";
-			if(port==443){
-				ret = net.goPost(hostName.getText().toString(), port, data);
-			}else {
+			Thread thread=new Thread(){
+				public void run(){
+					String auto=autoSend.getText().toString();
+					do {
+						byte[] data = getPakect(postData.getText());
+						Nets net = new Nets();
+						int port = Integer.parseInt(tNum.getText().toString());
+						String ret = "";
+						if (port == 443) {
+							ret = net.goPost(hostName.getText().toString(), port, data);
+						} else {
 
-				ret = net.GoHttp (hostName.getText().toString(), port, data);
-			}
-			feedBack.setText(ret);
-			
+							ret = net.GoHttp(hostName.getText().toString(), port, data);
+						}
+						feedBack.setText(ret);
+						if(!auto.equals("")){
+							MyUtil.sleeps(Integer.parseInt(auto));
+						}
+					}while ( !auto.equals(""));
+
+				}
+			};
+
+			thread.start();
 			
 		}
 	}
