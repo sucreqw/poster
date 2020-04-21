@@ -4,7 +4,9 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.HashMap;
 
+import javax.print.attribute.HashAttributeSet;
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -16,6 +18,7 @@ import javax.swing.ScrollPaneConstants;
 
 import com.sucre.mainUtil.MyUtil;
 import com.sucre.myNet.Nets;
+import com.sucre.myNet.OkHttp;
 
 /**
  * 建立一个winform以方便操作及显示最新反馈.
@@ -110,16 +113,18 @@ public class MainFrom extends JFrame implements ActionListener {
 				public void run(){
 					String auto=autoSend.getText().toString();
 					do {
-						byte[] data = getPakect(postData.getText());
-						Nets net = new Nets();
-						int port = Integer.parseInt(tNum.getText().toString());
+						//byte[] data = getPakect(postData.getText());
+						//Nets net = new Nets();
+						//int port = Integer.parseInt(tNum.getText().toString());
 						String ret = "";
-						if (port == 443) {
-							ret = net.goPost(hostName.getText().toString(), port, data);
+						/*if (port == 443) {
+							//ret = net.goPost(hostName.getText().toString(), port, data);
+
 						} else {
 
-							ret = net.GoHttp(hostName.getText().toString(), port, data);
-						}
+							//ret = net.GoHttp(hostName.getText().toString(), port, data);
+						}*/
+						ret=getPakect(postData.getText());
 						feedBack.setText(ret);
 						if(!auto.equals("")){
 							MyUtil.sleeps(Integer.parseInt(auto));
@@ -134,7 +139,7 @@ public class MainFrom extends JFrame implements ActionListener {
 		}
 	}
 
-	private byte[] getPakect(String data) {
+	private String getPakect(String data) {
 		data = data.replaceAll("randme", MyUtil.getRand(999999, 111111));
 		data = data.replaceAll("gettime", MyUtil.getTime());
 		// 生成随机数字
@@ -153,14 +158,64 @@ public class MainFrom extends JFrame implements ActionListener {
 			data = data.replaceAll("NN\\(" + t + "\\)", MyUtil.makeNonce(Integer.parseInt(t)));
 
 		}
-		// post 数据,要处理数据的长度.
+		String url;
+		OkHttp okHttp=new OkHttp();
+
+		//把header 全部取出来，进一步再装入map里
+		String headerData=MyUtil.midWrod("HTTP/1.1\n","\n\n",data);
+		HashMap<String,String> header=getHeader(headerData);
+		// POST/GET 数据,分别调用okhttp
 		if (data.startsWith("POST")) {
 			// 取出post 的from
 			String pd = "";
+			//post Data
 			pd = MyUtil.midWrod("\n\n", "\n\n", data);
-			data = data.replaceFirst("Content-Length: [\\d]+", "Content-Length: " + String.valueOf(pd.length()));
+            //取url
+			url=MyUtil.midWrod("POST "," HTTP",data);
+			//准备装body post Data
+			HashMap<String,String> body=getBody(pd);
+
+			return okHttp.goPost(url,header,body);
+		}else{
+			//取url
+			url=MyUtil.midWrod("GET "," HTTP",data);
+			return okHttp.goGet(url,header);
 		}
 
-		return data.getBytes();
+	}
+
+	/**
+	 * 把文本里的header转为map 返回
+	 * @param header
+	 * @return
+	 */
+	private HashMap<String,String> getHeader(String header){
+		String[] rowHeader=header.split("\n");
+		HashMap<String,String> result=new HashMap<>();
+		for(String key:rowHeader){
+			String[] kvHeader=key.split(": ");
+			result.put(kvHeader[0],kvHeader[1]);
+		}
+		return result;
+	}
+
+	/**
+	 * 把文本里的body 转为map
+	 * @param body
+	 * @return
+	 */
+	private HashMap<String,String> getBody(String body){
+		String[] rowBody=body.split("&");
+		HashMap<String,String> result=new HashMap<>();
+		for(String key:rowBody){
+			String[] kvBody=key.split("=");
+			if (kvBody.length>1){
+				result.put(kvBody[0],kvBody[1]);
+			}else{
+				result.put(kvBody[0],"");
+			}
+
+		}
+		return result;
 	}
 }

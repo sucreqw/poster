@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="发包器:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0bf624db-ce09-4885-8c37-302d9ca420dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/artifacts/_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_collections4_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/sucre/myNet/OkHttp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/com/sucre/MainFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/sucre/MainFrom.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sucre/MainFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/MainFrom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/发包器.iml" beforeDir="false" afterPath="$PROJECT_DIR$/发包器.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +33,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sucre.myNet" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -60,8 +75,17 @@
       <updated>1551405439617</updated>
       <workItem from="1551405468266" duration="1469000" />
       <workItem from="1551747528683" duration="237000" />
-      <workItem from="1567750804496" duration="1130000" />
+      <workItem from="1567750804496" duration="1519000" />
+      <workItem from="1587434908408" duration="3336000" />
     </task>
+    <task id="LOCAL-00001" summary="增加定时发送功能.">
+      <created>1567752210929</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1567752210929</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,26 +96,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加定时发送功能." />
+    <option name="LAST_COMMIT_MESSAGE" value="增加定时发送功能." />
   </component>
 </project>

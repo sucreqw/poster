@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="commons-collections4-4.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../spider/commons-collections4-4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../spider/commons-compress-1.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../spider/okhttp-3.12.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../spider/okio-1.13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../spider/okio-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../spider/poi-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../spider/poi-ooxml-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../spider/poi-ooxml-schemas-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../spider/xmlbeans-3.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
