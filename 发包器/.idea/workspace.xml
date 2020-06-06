@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="发包器:jar" />
+      <artifact name="poster:jar2" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bf624db-ce09-4885-8c37-302d9ca420dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/commons_collections4_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sucre/myNet/OkHttp.java" afterDir="false" />
+    <list default="true" id="0bf624db-ce09-4885-8c37-302d9ca420dd" name="Default Changelist" comment="okhttp post方法增加 支持json格式（未调试）">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/sucre/MainFrom.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/sucre/MainFrom.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sucre/MainFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/MainFrom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/发包器.iml" beforeDir="false" afterPath="$PROJECT_DIR$/发包器.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sucre/myNet/OkHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/myNet/OkHttp.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,35 +19,38 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8 (2)" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1QS4jccz91xoAUjZ498ECqyQRC2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.sucre.myNet" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -76,7 +74,13 @@
       <workItem from="1551405468266" duration="1469000" />
       <workItem from="1551747528683" duration="237000" />
       <workItem from="1567750804496" duration="1519000" />
-      <workItem from="1587434908408" duration="3336000" />
+      <workItem from="1587434908408" duration="5418000" />
+      <workItem from="1589525726491" duration="353000" />
+      <workItem from="1591433851137" duration="1813000" />
+      <workItem from="1591435843997" duration="821000" />
+      <workItem from="1591436852324" duration="82000" />
+      <workItem from="1591437077826" duration="383000" />
+      <workItem from="1591437762222" duration="1498000" />
     </task>
     <task id="LOCAL-00001" summary="增加定时发送功能.">
       <created>1567752210929</created>
@@ -85,27 +89,81 @@
       <option name="project" value="LOCAL" />
       <updated>1567752210929</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="在原有功能基础上集成okhttp">
+      <created>1587439910311</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587439910312</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="增加定时发送功能." />
-    <option name="LAST_COMMIT_MESSAGE" value="增加定时发送功能." />
+    <MESSAGE value="在原有功能基础上集成okhttp" />
+    <MESSAGE value="okhttp post方法增加 支持json格式（未调试）" />
+    <option name="LAST_COMMIT_MESSAGE" value="okhttp post方法增加 支持json格式（未调试）" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="530" y="280" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591436563655">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state x="530" y="280" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1600.984@0.0.1600.984" timestamp="1591436563655" />
+    <state x="580" y="245" key="FileChooserDialogImpl" timestamp="1591436932738">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state x="580" y="245" key="FileChooserDialogImpl/0.0.1600.984@0.0.1600.984" timestamp="1591436932738" />
+    <state width="1556" height="320" key="GridCell.Tab.0.bottom" timestamp="1591438415468">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state width="1556" height="320" key="GridCell.Tab.0.bottom/0.0.1600.984@0.0.1600.984" timestamp="1591438415468" />
+    <state width="1556" height="320" key="GridCell.Tab.0.center" timestamp="1591438415468">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state width="1556" height="320" key="GridCell.Tab.0.center/0.0.1600.984@0.0.1600.984" timestamp="1591438415468" />
+    <state width="1556" height="320" key="GridCell.Tab.0.left" timestamp="1591438415468">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state width="1556" height="320" key="GridCell.Tab.0.left/0.0.1600.984@0.0.1600.984" timestamp="1591438415468" />
+    <state width="1556" height="320" key="GridCell.Tab.0.right" timestamp="1591438415468">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state width="1556" height="320" key="GridCell.Tab.0.right/0.0.1600.984@0.0.1600.984" timestamp="1591438415468" />
+    <state width="1556" height="320" key="GridCell.Tab.1.bottom" timestamp="1591438415352">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state width="1556" height="320" key="GridCell.Tab.1.bottom/0.0.1600.984@0.0.1600.984" timestamp="1591438415352" />
+    <state width="1556" height="320" key="GridCell.Tab.1.center" timestamp="1591438415352">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state width="1556" height="320" key="GridCell.Tab.1.center/0.0.1600.984@0.0.1600.984" timestamp="1591438415352" />
+    <state width="1556" height="320" key="GridCell.Tab.1.left" timestamp="1591438415352">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state width="1556" height="320" key="GridCell.Tab.1.left/0.0.1600.984@0.0.1600.984" timestamp="1591438415352" />
+    <state width="1556" height="320" key="GridCell.Tab.1.right" timestamp="1591438415352">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state width="1556" height="320" key="GridCell.Tab.1.right/0.0.1600.984@0.0.1600.984" timestamp="1591438415352" />
+    <state x="280" y="65" key="SettingsEditor" timestamp="1591437432879">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state x="280" y="65" key="SettingsEditor/0.0.1600.984@0.0.1600.984" timestamp="1591437432879" />
   </component>
 </project>
