@@ -95,7 +95,9 @@ public class OkHttp implements X509TrustManager {
         //        //client.newBuilder().proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("localhost",8886)));
         OkHttpClient client = new OkHttpClient();
 
-        client.newBuilder().sslSocketFactory(createSSLSocketFactory());
+        List<Object> list=new ArrayList<>();
+        list=getFatory();
+        client.newBuilder().sslSocketFactory((SSLSocketFactory) list.get(0),(X509TrustManager) list.get(1));
         client.newBuilder().hostnameVerifier(new HostnameVerifier() {
             public boolean verify(String hostname, SSLSession session) {
                 return true;

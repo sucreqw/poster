@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bf624db-ce09-4885-8c37-302d9ca420dd" name="Default Changelist" comment="okhttp post方法增加 支持json格式（未调试）">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0bf624db-ce09-4885-8c37-302d9ca420dd" name="Default Changelist" comment="okhttp 更新证书fatory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sucre/MainFrom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/MainFrom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/sucre/myNet/OkHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sucre/myNet/OkHttp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,8 @@
       <workItem from="1591435843997" duration="821000" />
       <workItem from="1591436852324" duration="82000" />
       <workItem from="1591437077826" duration="383000" />
-      <workItem from="1591437762222" duration="1498000" />
+      <workItem from="1591437762222" duration="1635000" />
+      <workItem from="1591574404189" duration="460000" />
     </task>
     <task id="LOCAL-00001" summary="增加定时发送功能.">
       <created>1567752210929</created>
@@ -96,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587439910312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="okhttp 更新证书fatory">
+      <created>1591439363080</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591439363080</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,49 +126,62 @@
     <MESSAGE value="增加定时发送功能." />
     <MESSAGE value="在原有功能基础上集成okhttp" />
     <MESSAGE value="okhttp post方法增加 支持json格式（未调试）" />
-    <option name="LAST_COMMIT_MESSAGE" value="okhttp post方法增加 支持json格式（未调试）" />
+    <MESSAGE value="okhttp 更新证书fatory" />
+    <option name="LAST_COMMIT_MESSAGE" value="okhttp 更新证书fatory" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="280" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591436563655">
       <screen x="0" y="0" width="1600" height="984" />
     </state>
     <state x="530" y="280" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1600.984@0.0.1600.984" timestamp="1591436563655" />
+    <state x="398" y="58" key="CommitChangelistDialog2" timestamp="1591439379556">
+      <screen x="0" y="0" width="1600" height="984" />
+    </state>
+    <state x="398" y="58" key="CommitChangelistDialog2/0.0.1600.984@0.0.1600.984" timestamp="1591439379556" />
     <state x="580" y="245" key="FileChooserDialogImpl" timestamp="1591436932738">
       <screen x="0" y="0" width="1600" height="984" />
     </state>
     <state x="580" y="245" key="FileChooserDialogImpl/0.0.1600.984@0.0.1600.984" timestamp="1591436932738" />
-    <state width="1556" height="320" key="GridCell.Tab.0.bottom" timestamp="1591438415468">
-      <screen x="0" y="0" width="1600" height="984" />
+    <state width="1236" height="320" key="GridCell.Tab.0.bottom" timestamp="1591574819952">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1556" height="320" key="GridCell.Tab.0.bottom/0.0.1600.984@0.0.1600.984" timestamp="1591438415468" />
-    <state width="1556" height="320" key="GridCell.Tab.0.center" timestamp="1591438415468">
-      <screen x="0" y="0" width="1600" height="984" />
+    <state width="1236" height="320" key="GridCell.Tab.0.bottom/0.0.1280.984@0.0.1280.984" timestamp="1591574819952" />
+    <state width="1556" height="320" key="GridCell.Tab.0.bottom/0.0.1600.984@0.0.1600.984" timestamp="1591439407127" />
+    <state width="1236" height="320" key="GridCell.Tab.0.center" timestamp="1591574819952">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1556" height="320" key="GridCell.Tab.0.center/0.0.1600.984@0.0.1600.984" timestamp="1591438415468" />
-    <state width="1556" height="320" key="GridCell.Tab.0.left" timestamp="1591438415468">
-      <screen x="0" y="0" width="1600" height="984" />
+    <state width="1236" height="320" key="GridCell.Tab.0.center/0.0.1280.984@0.0.1280.984" timestamp="1591574819952" />
+    <state width="1556" height="320" key="GridCell.Tab.0.center/0.0.1600.984@0.0.1600.984" timestamp="1591439407127" />
+    <state width="1236" height="320" key="GridCell.Tab.0.left" timestamp="1591574819952">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1556" height="320" key="GridCell.Tab.0.left/0.0.1600.984@0.0.1600.984" timestamp="1591438415468" />
-    <state width="1556" height="320" key="GridCell.Tab.0.right" timestamp="1591438415468">
-      <screen x="0" y="0" width="1600" height="984" />
+    <state width="1236" height="320" key="GridCell.Tab.0.left/0.0.1280.984@0.0.1280.984" timestamp="1591574819952" />
+    <state width="1556" height="320" key="GridCell.Tab.0.left/0.0.1600.984@0.0.1600.984" timestamp="1591439407127" />
+    <state width="1236" height="320" key="GridCell.Tab.0.right" timestamp="1591574819952">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1556" height="320" key="GridCell.Tab.0.right/0.0.1600.984@0.0.1600.984" timestamp="1591438415468" />
-    <state width="1556" height="320" key="GridCell.Tab.1.bottom" timestamp="1591438415352">
-      <screen x="0" y="0" width="1600" height="984" />
+    <state width="1236" height="320" key="GridCell.Tab.0.right/0.0.1280.984@0.0.1280.984" timestamp="1591574819952" />
+    <state width="1556" height="320" key="GridCell.Tab.0.right/0.0.1600.984@0.0.1600.984" timestamp="1591439407127" />
+    <state width="1236" height="320" key="GridCell.Tab.1.bottom" timestamp="1591574819793">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1556" height="320" key="GridCell.Tab.1.bottom/0.0.1600.984@0.0.1600.984" timestamp="1591438415352" />
-    <state width="1556" height="320" key="GridCell.Tab.1.center" timestamp="1591438415352">
-      <screen x="0" y="0" width="1600" height="984" />
+    <state width="1236" height="320" key="GridCell.Tab.1.bottom/0.0.1280.984@0.0.1280.984" timestamp="1591574819793" />
+    <state width="1556" height="320" key="GridCell.Tab.1.bottom/0.0.1600.984@0.0.1600.984" timestamp="1591439407127" />
+    <state width="1236" height="320" key="GridCell.Tab.1.center" timestamp="1591574819793">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1556" height="320" key="GridCell.Tab.1.center/0.0.1600.984@0.0.1600.984" timestamp="1591438415352" />
-    <state width="1556" height="320" key="GridCell.Tab.1.left" timestamp="1591438415352">
-      <screen x="0" y="0" width="1600" height="984" />
+    <state width="1236" height="320" key="GridCell.Tab.1.center/0.0.1280.984@0.0.1280.984" timestamp="1591574819793" />
+    <state width="1556" height="320" key="GridCell.Tab.1.center/0.0.1600.984@0.0.1600.984" timestamp="1591439407127" />
+    <state width="1236" height="320" key="GridCell.Tab.1.left" timestamp="1591574819793">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1556" height="320" key="GridCell.Tab.1.left/0.0.1600.984@0.0.1600.984" timestamp="1591438415352" />
-    <state width="1556" height="320" key="GridCell.Tab.1.right" timestamp="1591438415352">
-      <screen x="0" y="0" width="1600" height="984" />
+    <state width="1236" height="320" key="GridCell.Tab.1.left/0.0.1280.984@0.0.1280.984" timestamp="1591574819793" />
+    <state width="1556" height="320" key="GridCell.Tab.1.left/0.0.1600.984@0.0.1600.984" timestamp="1591439407127" />
+    <state width="1236" height="320" key="GridCell.Tab.1.right" timestamp="1591574819793">
+      <screen x="0" y="0" width="1280" height="984" />
     </state>
-    <state width="1556" height="320" key="GridCell.Tab.1.right/0.0.1600.984@0.0.1600.984" timestamp="1591438415352" />
+    <state width="1236" height="320" key="GridCell.Tab.1.right/0.0.1280.984@0.0.1280.984" timestamp="1591574819793" />
+    <state width="1556" height="320" key="GridCell.Tab.1.right/0.0.1600.984@0.0.1600.984" timestamp="1591439407127" />
     <state x="280" y="65" key="SettingsEditor" timestamp="1591437432879">
       <screen x="0" y="0" width="1600" height="984" />
     </state>

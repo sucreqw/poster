@@ -173,9 +173,14 @@ public class MainFrom extends JFrame implements ActionListener {
             //取url
 			url=MyUtil.midWrod("POST "," HTTP",data);
 			//准备装body post Data
-			HashMap<String,String> body=getBody(pd);
+			//先检查是json 还是key value形式
+			if(pd.startsWith("{")){
+				return okHttp.goPost(url,header,pd);
+			}else{
+				HashMap<String,String> body=getBody(pd);
+				return okHttp.goPost(url,header,body);
+			}
 
-			return okHttp.goPost(url,header,body);
 		}else{
 			//取url
 			url=MyUtil.midWrod("GET "," HTTP",data);
